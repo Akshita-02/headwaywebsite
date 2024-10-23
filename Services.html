@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Web Development Services</title>
+    <style>
+        /* Basic styles for the navbar */
+        .navbar {
+            background-color: #4f4c68;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .navbar a {
+            float: right; /* Right-aligned menu */
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border: 1px solid #007bff; /* Blue border for menu items */
+            margin-left: 5px;
+            border-radius: 4px;
+        }
+        .dropdown {
+            float: right; /* Align dropdown to the right */
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            margin: 0;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid #007bff; /* Blue border */
+            border-radius: 4px;
+        }
+        .dropdown .dropbtn::after {
+            content: " ▼"; /* Arrow to indicate dropdown */
+            font-size: 12px;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+            color: white;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Main content styles */
+        .content {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .content h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        /* Service box styles */
+        .service-section {
+            margin-bottom: 30px;
+            background-color: #f0f8ff;
+            border: 1px solid #007bff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service-section h2 {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar with Dropdown for Services -->
+    <div class="navbar">
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#portfolio">Portfolio</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webDevelopment">Web Development</a>
+                <a href="#mobileApp">Mobile App Development</a>
+                <a href="#ecommerce">E-commerce Solutions</a>
+                <a href="#seo">SEO Optimization</a>
+                <a href="#uiux">UI/UX Design</a>
+                <a href="#digitalMarketing">Digital Marketing</a>
+                <a href="#cloudServices">Cloud Services</a>
+            </div>
+        </div>
+        <a href="#home">Home</a>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        <h1>Our Web Development Services</h1>
+        <p>
+            At [Your Company Name], we specialize in delivering top-notch web development services that drive business growth and enhance online presence. Our team of expert developers and designers is committed to crafting websites that are not only visually appealing but also optimized for performance, security, and SEO. We offer a wide range of services to meet the unique needs of each client, from startups to established enterprises.
+        </p>
+
+        <!-- Sections for each service -->
+        <div id="webDevelopment" class="service-section">
+            <h2>Web Development</h2>
+            <p>
+                Our web development services are designed to provide businesses with a professional online presence. We use the latest technologies to build responsive and user-friendly websites that deliver a seamless experience across all devices. Whether it's a corporate website, a personal blog, or a custom web application, we have the expertise to make it happen.
+            </p>
+        </div>
+
+        <div id="mobileApp" class="service-section">
+            <h2>Mobile App Development</h2>
+            <p>
+                We create high-quality mobile applications for iOS and Android platforms. Our mobile app development services focus on building apps that are fast, secure, and provide a rich user experience. Whether you need a native app or a cross-platform solution, we deliver results that meet your business objectives.
+            </p>
+        </div>
+
+        <div id="ecommerce" class="service-section">
+            <h2>E-commerce Solutions</h2>
+            <p>
+                Our e-commerce solutions enable businesses to reach customers worldwide. We develop secure and scalable online stores that provide a seamless shopping experience. From custom shopping cart development to payment gateway integration, we offer everything you need to succeed in the e-commerce space.
+            </p>
+        </div>
+
+        <div id="seo" class="service-section">
+            <h2>SEO Optimization</h2>
+            <p>
+                Boost your website's visibility and ranking with our SEO optimization services. We use white-hat SEO techniques to improve your website's search engine performance, driving more organic traffic to your site. Our services include keyword research, on-page optimization, link building, and content creation.
+            </p>
+        </div>
+
+        <div id="uiux" class="service-section">
+            <h2>UI/UX Design</h2>
+            <p>
+                Our UI/UX design services focus on creating intuitive and engaging user interfaces that deliver an outstanding user experience. We follow a user-centric approach to design websites and mobile apps that are not only beautiful but also easy to navigate and use.
+            </p>
+        </div>
+
+        <div id="digitalMarketing" class="service-section">
+            <h2>Digital Marketing</h2>
+            <p>
+                Expand your online reach with our digital marketing services. We offer comprehensive digital marketing strategies, including social media management, PPC campaigns, email marketing, and content marketing to help you achieve your business goals.
+            </p>
+        </div>
+
+        <div id="cloudServices" class="service-section">
+            <h2>Cloud Services</h2>
+            <p>
+                Leverage the power of cloud computing with our cloud services. We offer cloud migration, management, and optimization services to help businesses achieve scalability, flexibility, and cost savings in their IT infrastructure.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
