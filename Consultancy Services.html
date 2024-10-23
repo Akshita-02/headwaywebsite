@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultancy Services | Expert Solutions for Business Growth</title>
+    <meta name="description" content="Discover our expert consultancy services including business strategy, financial consulting, IT solutions, HR consulting, and market research. We help businesses thrive with tailored solutions that drive growth, efficiency, and profitability. Contact us today to discuss your consultancy needs.">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <h1>Consultancy Services</h1>
+
+    <section>
+        <h2>Our Consultancy Services</h2>
+        <div id="consultancy-services" class="section">
+            <div class="service-box">
+                <h3>Business Strategy Consulting</h3>
+                <p>We specialize in helping businesses formulate effective strategies to drive growth, improve competitiveness, and achieve long-term goals. Our approach is tailored to your business’s specific needs, ensuring sustainable success in an ever-changing market.</p>
+            </div>
+            <div class="service-box">
+                <h3>Financial Consulting</h3>
+                <p>Our financial experts offer deep insights into optimizing your financial processes, improving cash flow, and boosting profitability. From budgeting to financial restructuring, we provide the strategies you need to achieve financial excellence.</p>
+            </div>
+            <div class="service-box">
+                <h3>IT Consulting</h3>
+                <p>Leverage the power of technology to streamline your operations. Our IT consultants offer customized solutions to help you enhance efficiency, reduce costs, and implement the right technologies to support your business goals.</p>
+            </div>
+            <div class="service-box">
+                <h3>HR Consulting</h3>
+                <p>Our HR consulting services are designed to help you create a productive and engaged workforce. From employee engagement strategies to organizational development, we provide solutions that improve human resource practices and align them with your business objectives.</p>
+            </div>
+            <div class="service-box">
+                <h3>Market Research Consulting</h3>
+                <p>Understanding your market is key to making informed business decisions. Our thorough market research services provide actionable insights that help you better understand your customers, competitors, and industry trends, leading to more strategic decision-making.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Our Consultancy Projects</h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>Project C1: Startup Strategy Development</h3>
+                <p>We worked with a promising startup to develop a comprehensive business strategy, resulting in successful funding rounds and sustained growth. Our strategic input helped the company scale rapidly while maintaining operational efficiency.</p>
+            </div>
+            <div class="project-box">
+                <h3>Project C2: Financial Restructuring</h3>
+                <p>Our financial consulting team implemented a restructuring plan for a mid-sized company, leading to improved profitability and streamlined financial operations. The company saw a significant increase in revenue within the first year.</p>
+            </div>
+            <div class="project-box">
+                <h3>Project C3: IT Transformation in Healthcare</h3>
+                <p>We provided IT consulting services for a healthcare organization, enhancing their technology infrastructure, improving patient data management, and ensuring compliance with healthcare regulations. The result was improved operational efficiency and patient satisfaction.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="form-container">
+        <h2>Tell Us What You Need</h2>
+        <form action="submit.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="service-needed">Which service are you looking for?</label>
+                <select id="service-needed" name="service-needed" required>
+                    <option value="">Select a service</option>
+                    <option value="Business Strategy Consulting">Business Strategy Consulting</option>
+                    <option value="Financial Consulting">Financial Consulting</option>
+                    <option value="IT Consulting">IT Consulting</option>
+                    <option value="HR Consulting">HR Consulting</option>
+                    <option value="Market Research Consulting">Market Research Consulting</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="details">Additional Details:</label>
+                <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information here..."></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Request">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

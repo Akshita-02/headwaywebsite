@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & Maintenance Services</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <h1>Support & Maintenance Services</h1>
+
+    <section>
+        <h2>Our Support & Maintenance Services</h2>
+        <div id="Support & Maintenance" class="section">
+            <div class="service-box">
+                <h3>24/7 Technical Support</h3>
+                <p>Our team is available around the clock to resolve any technical issues you may face.</p>
+            </div>
+            <div class="service-box">
+                <h3>Software Updates</h3>
+                <p>We ensure that your software is always up-to-date with the latest features and security patches.</p>
+            </div>
+            <div class="service-box">
+                <h3>Performance Monitoring</h3>
+                <p>We continuously monitor the performance of your systems to ensure optimal functionality.</p>
+            </div>
+            <div class="service-box">
+                <h3>Data Backup and Recovery</h3>
+                <p>Our data backup solutions ensure that your critical information is always secure and recoverable.</p>
+            </div>
+            <div class="service-box">
+                <h3>Hardware Support</h3>
+                <p>We provide comprehensive support for your hardware needs, including repairs and replacements.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Our Support & Maintenance Projects</h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>Project SM1</h3>
+                <p>Implemented a 24/7 support system for a financial organization, significantly reducing downtime.</p>
+            </div>
+            <div class="project-box">
+                <h3>Project SM2</h3>
+                <p>Executed a data recovery project for a healthcare client, restoring critical patient records.</p>
+            </div>
+            <div class="project-box">
+                <h3>Project SM3</h3>
+                <p>Managed software updates for a retail company, ensuring compliance and security.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="form-container">
+        <h2>Tell Us What You Need</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service-needed">Which service are you looking for?</label>
+            <select id="service-needed" name="service-needed" required>
+                <option value="">Select a service</option>
+                <option value="24/7 Technical Support">24/7 Technical Support</option>
+                <option value="Software Updates">Software Updates</option>
+                <option value="Performance Monitoring">Performance Monitoring</option>
+                <option value="Data Backup and Recovery">Data Backup and Recovery</option>
+                <option value="Hardware Support">Hardware Support</option>
+            </select>
+
+            <label for="details">Additional Details:</label>
+            <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information here..."></textarea>
+
+            <input type="submit" value="Submit Request">
+        </form>
+    </div>
+
+</body>
+</html>
