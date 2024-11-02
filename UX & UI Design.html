@@ -4,15 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UX/UI Design Services</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #3a3a3a, #1a1a1a);
+            color: #f1f1f1;
+        }
+
+        /* Sidebar Navigation Styles */
+        nav {
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #252525;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #9bb1ff;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #505050;
+            color: #ffffff;
+        }
+
+        /* Main Content */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #9bb1ff;
+        }
+
+        /* Section and Card Styles */
+        .section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+            background: rgba(40, 40, 40, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-box, .project-box {
+            border: 1px solid #9bb1ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            background-color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .service-box:hover, .project-box:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Form Styles */
+        .form-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #9bb1ff;
+            border-radius: 6px;
+            background-color: #2a2a2a;
+            color: #f1f1f1;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #9bb1ff;
+            color: #1a1a1a;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #7080ff;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>UX/UI Design Services</h1>
+    <!-- Sidebar Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>Our UX/UI Design Services</h2>
-        <div id="UX & UI Design" class="section">
+    <!-- Main Content -->
+    <div class="content">
+        <h1>UX/UI Design Services</h1>
+
+        <section id="services" class="section">
+            <h2>Our UX/UI Design Services</h2>
             <div class="service-box">
                 <h3>User Research</h3>
                 <p>We conduct comprehensive user research to understand the needs and behaviors of your audience.</p>
@@ -33,72 +166,64 @@
                 <h3>User Testing</h3>
                 <p>We perform user testing to gather feedback and make data-driven improvements to your design.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2>Our UX/UI Design Projects</h2>
-        <div class="projects-container">
+        <section id="projects" class="section">
+            <h2>Our UX/UI Design Projects</h2>
             <div class="project-box">
                 <h3>SaaS Platform for Project Management</h3>
-                <p>Designed a sophisticated SaaS project management platform for a Client, aimed at enhancing team collaboration and productivity through intuitive UI/UX design.</p>
-                <p><strong>Key Benefits</strong>:</p> 
+                <p>Designed a sophisticated SaaS project management platform to enhance team collaboration and productivity through intuitive UI/UX design.</p>
                 <ul>
-                    <li>Kanban Boards: Created customizable Kanban boards for visual task management and workflow organization.</li>
-                    <li>Real-Time Collaboration: Integrated chat and comment features for seamless communication between team members.</li>
-                    <li>Reporting Tools: Developed interactive reporting features to analyze team performance and project timelines.</li>
-                    <li>Simplify project tracking and task management for teams of various sizes.</li>
+                    <li>Customizable Kanban boards for visual task management.</li>
+                    <li>Real-Time Collaboration: Integrated chat and comment features.</li>
+                    <li>Interactive Reporting for performance and timelines.</li>
                 </ul>  
             </div>
             <div class="project-box">
                 <h3>Online Learning Management System</h3>
-                <p>Developed a robust Learning Management System (LMS) for [Client's Brand], focusing on providing an engaging and interactive learning environment for users of all ages.</p>
-                <p><strong>Key Benefits</strong>:</p> 
+                <p>Developed a robust LMS for engaging users with a dynamic learning experience.</p>
                 <ul>
-                    <li>Facilitate online learning through a user-friendly interface and engaging content.</li>
-                    <li>Interactive Course Materials: Designed courses with videos, quizzes, and discussion forums to promote active learning.</li>
-                    <li>Progress Tracking: Implemented features for learners to track their progress and receive feedback on assessments.</li>
-                    <li>Responsive Design: Ensured the platform is accessible on various devices, providing a seamless experience for all users.</li>
+                    <li>Interactive Course Materials: Videos, quizzes, and forums.</li>
+                    <li>Progress Tracking for learner assessments.</li>
+                    <li>Responsive Design for multi-device accessibility.</li>
                 </ul>  
             </div>
             <div class="project-box">
                 <h3>E-Commerce Mobile Application Design</h3>
-                <p>Designed a user-friendly mobile application for a Client , aiming to enhance the online shopping experience. The app facilitates seamless navigation, personalized recommendations, and secure checkout processes.</p>
-                <p><strong>Key Benefits</strong>:</p> 
+                <p>Designed a user-friendly mobile app for an enhanced online shopping experience.</p>
                 <ul>
-                    <li>Intuitive Navigation: Implemented a bottom navigation bar for easy access to categories and user account settings.</li>
-                    <li>Personalized Recommendations: Developed algorithms to suggest products based on user behavior and preferences.</li>
-                    <li>Secure Payment Gateway: Designed a streamlined checkout process with multiple payment options, ensuring user data security.</li>
-                    <li>Integrated personalized user profiles for tailored recommendations.</li>
+                    <li>Intuitive Navigation with bottom navigation bar.</li>
+                    <li>Secure Payment Gateway with multiple options.</li>
+                    <li>Personalized Recommendations based on user behavior.</li>
                 </ul>
             </div>
+        </section>
+
+        <div id="contact-form" class="form-container">
+            <h2>Tell Us What You Need</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service-needed">Which service are you looking for?</label>
+                <select id="service-needed" name="service-needed" required>
+                    <option value="">Select a service</option>
+                    <option value="User Research">User Research</option>
+                    <option value="Wireframing">Wireframing</option>
+                    <option value="Prototyping">Prototyping</option>
+                    <option value="Visual Design">Visual Design</option>
+                    <option value="User Testing">User Testing</option>
+                </select>
+
+                <label for="details">Additional Details:</label>
+                <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information here..."></textarea>
+
+                <input type="submit" value="Submit Request">
+            </form>
         </div>
-    </section>
-
-    <div class="form-container">
-        <h2>Tell Us What You Need</h2>
-        <form action="submit.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="service-needed">Which service are you looking for?</label>
-            <select id="service-needed" name="service-needed" required>
-                <option value="">Select a service</option>
-                <option value="User Research">User Research</option>
-                <option value="Wireframing">Wireframing</option>
-                <option value="Prototyping">Prototyping</option>
-                <option value="Visual Design">Visual Design</option>
-                <option value="User Testing">User Testing</option>
-            </select>
-
-            <label for="details">Additional Details:</label>
-            <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information here..."></textarea>
-
-            <input type="submit" value="Submit Request">
-        </form>
     </div>
 
 </body>
