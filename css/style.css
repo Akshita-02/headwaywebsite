@@ -67,6 +67,35 @@ body{
     box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #9bb1ff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #444;
+}
+
+.dropdown-content a:hover {
+    background-color: #505050;
+    color: #ffffff;
+}
+
+/* Show dropdown on hover */
+.navbar ul li:hover .dropdown-content {
+    display: block;
+}
 .communicate .btn{
     outline: none;
     border: none;
