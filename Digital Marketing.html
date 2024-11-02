@@ -4,123 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Marketing</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #3a3a3a, #1a1a1a);
+            color: #f1f1f1;
+        }
+
+        /* Sidebar Navigation Styles */
+        nav {
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #252525;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #9bb1ff;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #505050;
+            color: #ffffff;
+        }
+
+        /* Main Content */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #9bb1ff;
+        }
+
+        /* Section and Card Styles */
+        .section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+            background: rgba(40, 40, 40, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-box {
+            border: 1px solid #9bb1ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            background-color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Form Styles */
+        .form-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #9bb1ff;
+            border-radius: 6px;
+            background-color: #2a2a2a;
+            color: #f1f1f1;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #9bb1ff;
+            color: #1a1a1a;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #7080ff;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Digital Marketing</h1>
+    <!-- Sidebar Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#DigitalMarketing">Digital Marketing</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>Our Digital Marketing Services</h2>
-        <div id="Digital Marketing" class="section">
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Digital Marketing</h1>
+
+        <section id="services" class="section">
+            <h2>Our Digital Marketing Services</h2>
             <div class="service-box">
                 <h3>PPC Advertising</h3>
-                <p>We create effective Pay-Per-Click (PPC) advertising campaigns that drive targeted traffic and boost conversions for your business. Our approach focuses on strategic planning, continuous optimization, and detailed analytics to ensure maximum return on investment (ROI) from your advertising spend.</p>
-                <p><strong>Key Benefits</strong></p>
-                <li>Targeted Keyword Research: Our team conducts in-depth keyword research to identify high-performing keywords relevant to your industry. We focus on both short-tail and long-tail keywords to reach your target audience effectively.</li>
-                <li>Compelling Ad Copy Creation: We craft engaging ad copy that resonates with your audience and encourages clicks. Our ads highlight your unique selling propositions (USPs) and include strong calls-to-action (CTAs) to drive conversions.</li>
-                <li>Campaign Strategy Development: We develop tailored PPC strategies that align with your business goals, whether you aim to increase brand awareness, generate leads, or boost sales. Our campaigns are designed to achieve measurable results.</li>
-                <li>Performance Monitoring and Reporting: We track campaign performance through detailed analytics, providing regular updates on key metrics like click-through rates (CTR), conversion rates, and cost per acquisition (CPA).</li>
-                <p><strong>our PPC advertising services are designed to help businesses leverage the power of paid search and display advertising effectively. With a focus on strategic planning, compelling ad creation, and continuous performance monitoring, we ensure that your campaigns not only drive traffic but also deliver measurable results and maximize your ROI.</strong></p>
+                <p>We create effective Pay-Per-Click (PPC) advertising campaigns that drive targeted traffic and boost conversions for your business.</p>
+                <ul>
+                    <li>Targeted Keyword Research</li>
+                    <li>Compelling Ad Copy Creation</li>
+                    <li>Campaign Strategy Development</li>
+                    <li>Performance Monitoring and Reporting</li>
+                </ul>
             </div>
             <div class="service-box">
                 <h3>SEO Services</h3>
-                <p>Our SEO strategies are meticulously crafted to enhance your website's visibility and improve its ranking in search engine results. We understand that a strong online presence is vital for driving traffic and increasing conversions. By leveraging the latest techniques and best practices, we focus on optimizing various aspects of your website to ensure that it reaches the right audience effectively. Our comprehensive approach combines thorough keyword research, on-page optimization, high-quality content creation, and robust link-building strategies, all tailored to meet your specific business needs. With our dedicated SEO services, we aim to help your website achieve sustainable growth and long-term success.</p>
-                <p><strong>Key Benefits</strong></p>
-                <li>We conduct in-depth keyword analysis to identify the most relevant and high-traffic keywords for your business.
-                    This enables us to optimize your content effectively, ensuring that you attract the right audience and increase organic traffic.</li>
-                <li>Our team optimizes essential elements of your website, including meta tags, headers, URLs, and content structure.
-                    This improves both search engine friendliness and user experience, leading to higher engagement and lower bounce rates.</li>
-                <li>We develop engaging, informative, and SEO-friendly content that captivates visitors while aligning with search engine algorithms.
-                    Our focus is on creating content that not only attracts traffic but also encourages visitors to spend more time on your site, which positively impacts SEO rankings.</li>
-                <li>We implement effective link-building strategies to enhance your website's authority and credibility.
-                    By acquiring high-quality backlinks from reputable sources, we help boost your search rankings and establish your website as a trusted resource in your industry.</li>
-                <p><strong>SEO services are designed to drive sustainable growth by improving your website's search engine rankings and visibility. By focusing on comprehensive keyword optimization, on-page elements, quality content, and authoritative link building, we ensure that your target audience can easily find you online. Partner with us to elevate your digital presence and achieve long-term success.</strong></p>
+                <p>Our SEO strategies enhance your website's visibility and improve its ranking in search engine results.</p>
+                <ul>
+                    <li>In-depth Keyword Analysis</li>
+                    <li>On-page Optimization</li>
+                    <li>High-Quality Content Creation</li>
+                    <li>Robust Link-Building Strategies</li>
+                </ul>
             </div>
             <div class="service-box">
                 <h3>SMM Services</h3>
-                <p>Our Social Media Marketing (SMM) services are designed to enhance your brand's online presence and engage your target audience effectively. In today’s digital landscape, social media is a crucial platform for businesses to connect with their customers, share valuable content, and foster brand loyalty. We leverage various social media channels to create tailored strategies that resonate with your audience and align with your business objectives. Our approach focuses on crafting compelling content, running targeted campaigns, and monitoring engagement metrics to ensure continuous improvement and success in your social media efforts.</p>
-                <p><strong>Key Benefits</strong></p>
-                <li>We develop engaging and relevant content tailored to your brand's voice and your audience's interests.
-                    This includes eye-catching graphics, informative videos, and well-crafted posts that encourage interaction and sharing.</li>
-                <li>Our team designs and executes targeted social media campaigns to reach specific goals, such as brand awareness, lead generation, or product launches.
-                    We analyze audience behavior and preferences to optimize campaign performance and maximize ROI.</li>
-                <li>We actively manage your social media profiles, responding to comments, messages, and reviews to foster community interaction and strengthen customer relationships.
-                    Our approach ensures that your audience feels heard and valued, which enhances brand loyalty.</li>
-                <li>We provide regular performance reports that analyze key metrics such as engagement rates, follower growth, and campaign effectiveness.
-                    This data-driven approach allows us to refine strategies continuously and ensure your social media efforts deliver the desired results.</li>
-                <p><strong>our SMM services aim to build a robust social media presence that engages your audience and cultivates brand loyalty. By focusing on tailored content, strategic campaigns, active community engagement, and detailed performance analytics, we help your brand thrive in the digital space. Partner with us to unlock the full potential of your social media channels and connect with your audience meaningfully.</strong></p>
+                <p>Our Social Media Marketing (SMM) services boost your brand's online presence and engage your target audience effectively.</p>
+                <ul>
+                    <li>Engaging Content Creation</li>
+                    <li>Targeted Campaigns</li>
+                    <li>Community Management</li>
+                    <li>Performance Reporting</li>
+                </ul>
             </div>
             <div class="service-box">
                 <h3>ORM Services</h3>
-                <p>Our Online Reputation Management (ORM) services are designed to protect and enhance your brand's image in the digital landscape. In an era where information spreads rapidly, managing your online reputation is crucial for maintaining customer trust and loyalty. Our team employs a proactive approach to monitor, address, and influence how your brand is perceived online. We work to identify potential issues before they escalate and implement strategies that promote positive feedback, ensuring that your brand stands out for all the right reasons.</p>
-                <p><strong>Key Benefits</strong></p>
-                <li>We continuously monitor online conversations about your brand across various platforms, including social media, review sites, and blogs.
-                    This real-time monitoring allows us to identify both positive and negative sentiments, enabling us to respond promptly and effectively.</li>
-                <li>Our team is equipped to handle any negative publicity that may arise.
-                    We develop crisis communication strategies that mitigate damage and restore your brand’s reputation swiftly and efficiently.
-                    </li>
-                <li>We focus on generating and promoting positive content related to your brand to overshadow any negative information.
-                    This includes blog posts, press releases, testimonials, and case studies that highlight your brand's strengths and achievements.</li>
-                <li>We assist in managing online reviews by encouraging satisfied customers to leave positive feedback while addressing any negative reviews constructively.
-                    Our approach ensures that your brand maintains a positive image and builds credibility with potential customers.</li>
-                <p><strong>ORM services provide a comprehensive solution to safeguard and enhance your brand image in the online realm. Through diligent brand monitoring, effective crisis management, positive content creation, and proactive review management, we help you maintain a stellar reputation that fosters customer trust and loyalty. Trust us to manage your online presence effectively and ensure your brand is seen in the best light.</strong></p>
+                <p>Our Online Reputation Management (ORM) services protect and enhance your brand's image in the digital landscape.</p>
+                <ul>
+                    <li>Brand Monitoring</li>
+                    <li>Negative Publicity Management</li>
+                    <li>Positive Content Creation</li>
+                    <li>Review Management</li>
+                </ul>
             </div>
             <div class="service-box">
                 <h3>Email Marketing</h3>
-                <p>Our email marketing strategies are designed to help you effectively reach your target audience while increasing engagement and sales. Email marketing remains one of the most powerful digital marketing tools, enabling businesses to communicate directly with customers in a personalized and impactful way. We develop tailored email campaigns that resonate with your audience, whether you want to announce new products, share promotions, or provide valuable content. Our approach ensures high open and click-through rates, translating to increased conversions and sales for your business.</p>
-                <p><strong>Key Benefits</strong></p>
-                <li>We segment your audience based on demographics, behavior, and preferences to deliver personalized messages.
-                    Targeted campaigns lead to higher engagement and conversion rates by addressing the specific needs of each segment.</li>
-                <li>Our team crafts engaging and persuasive email content, including attention-grabbing subject lines, informative body text, and clear calls to action.
-                    We ensure that every email resonates with your brand voice and encourages recipients to take the desired action.</li>
-                <li>We provide comprehensive reporting on key metrics such as open rates, click-through rates, and conversions.
-                    This data-driven approach allows us to continually optimize your campaigns for better performance and ROI.</li>
-                <li>Our email marketing solutions include automation to streamline your campaigns and save time.
-                    We set up automated workflows for welcome emails, follow-ups, and re-engagement campaigns, ensuring timely communication with your audience.</li>
-                <p><strong>our email marketing services offer a strategic approach to connecting with your audience, driving engagement, and increasing sales. By utilizing targeted campaigns, compelling content, performance tracking, and automation, we help you maximize the impact of your email marketing efforts. Let us help you create effective email campaigns that foster customer relationships and contribute to your business growth.</strong></p>
+                <p>Our email marketing strategies help you effectively reach your target audience and increase engagement.</p>
+                <ul>
+                    <li>Audience Segmentation</li>
+                    <li>Compelling Content Creation</li>
+                    <li>Performance Tracking</li>
+                    <li>Automation Solutions</li>
+                </ul>
             </div>
             <div class="service-box">
                 <h3>Affiliate Marketing</h3>
-                <p>Our affiliate marketing programs are designed to help you expand your reach and boost your revenue by leveraging the power of partnerships. By collaborating with affiliates who align with your brand, we create a network that promotes your products or services to a wider audience. This performance-based marketing strategy allows you to pay affiliates only when they generate sales, making it a cost-effective solution for increasing visibility and driving conversions. Our comprehensive approach ensures that your affiliate program is set up for success, from recruitment to ongoing management and optimization.</p>
-                <p><strong>Key Benefits</strong></p>
-                <li>We develop customized affiliate marketing programs that align with your business goals and target audience.
-                    By identifying the right affiliates, we ensure that your program reaches potential customers effectively.</li>
-                <li>Our team implements strategies to attract high-quality affiliates who are passionate about your brand.
-                    We utilize various channels, including social media, influencer outreach, and affiliate networks, to recruit the best partners.</li>
-                <li>We provide advanced tracking solutions to monitor affiliate performance, including clicks, conversions, and commissions earned.
-                    Our detailed reporting allows for data-driven decision-making and program optimization.</li>
-                <li>Our team offers continuous support to affiliates, ensuring they have the resources they need to promote your brand effectively.
-                    We regularly analyze program performance and make adjustments to strategies and commission structures to maximize results.</li>
-                <p><strong>our affiliate marketing services empower you to grow your business by establishing a powerful network of partners. With tailored program design, robust recruitment strategies, comprehensive tracking, and ongoing support, we help you expand your reach and increase revenue through effective affiliate marketing. Let us partner with you to create a successful affiliate program that drives results and builds lasting relationships.</strong></p>
+                <p>Our affiliate marketing programs help you expand your reach and boost your revenue through partnerships.</p>
+                <ul>
+                    <li>Customized Affiliate Program</li>
+                    <li>Affiliate Recruitment</li>
+                    <li>Performance Tracking</li>
+                    <li>Ongoing Support</li>
+                </ul>
             </div>
+        </section>
+
+        <div id="contact-form" class="form-container">
+            <h2>Tell Us What You Need</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service-needed">Which service are you looking for?</label>
+                <select id="service-needed" name="service-needed" required>
+                    <option value="">Select a service</option>
+                    <option value="PPC Advertising">PPC Advertising</option>
+                    <option value="SEO Services">SEO Services</option>
+                    <option value="SMM Services">SMM Services</option>
+                    <option value="ORM Services">ORM Services</option>
+                    <option value="Email Marketing">Email Marketing</option>
+                    <option value="Affiliate Marketing">Affiliate Marketing</option>
+                </select>
+
+                <label for="details">Additional Details:</label>
+                <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information here..."></textarea>
+
+                <input type="submit" value="Submit Request">
+            </form>
         </div>
-    </section>
-        <div class="form-container">
-        <h2>Tell Us What You Need</h2>
-        <form action="submit.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="service-needed">Which service are you looking for?</label>
-            <select id="service-needed" name="service-needed" required>
-                <option value="">Select a service</option>
-                <option value="PPC Advertising">PPC Advertising</option>
-                <option value="SEO Services">SEO Services</option>
-                <option value="SMM Services">SMM Services</option>
-                <option value="ORM Services">ORM Services</option>
-                <option value="Email Marketing">Email Marketing</option>
-                <option value="Affiliate Marketing">Affiliate Marketing</option>
-            </select>
-
-            <label for="details">Additional Details:</label>
-            <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information here..."></textarea>
-
-            <input type="submit" value="Submit Request">
-        </form>
     </div>
 
 </body>
