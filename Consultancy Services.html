@@ -3,88 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultancy Services | Expert Solutions for Business Growth</title>
-    <meta name="description" content="Discover our expert consultancy services including business strategy, financial consulting, IT solutions, HR consulting, and market research. We help businesses thrive with tailored solutions that drive growth, efficiency, and profitability. Contact us today to discuss your consultancy needs.">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <title>Website Maintenance Services</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #3a3a3a, #1a1a1a);
+            color: #f1f1f1;
+        }
+
+        /* Sidebar Navigation Styles */
+        nav {
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #252525;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #9bb1ff;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #505050;
+            color: #ffffff;
+        }
+
+        /* Main Content */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #9bb1ff;
+        }
+
+        /* Section and Card Styles */
+        .section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+            background: rgba(40, 40, 40, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-box, .project-box {
+            border: 1px solid #9bb1ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            background-color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .service-box:hover, .project-box:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Form Styles */
+        .form-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #9bb1ff;
+            border-radius: 6px;
+            background-color: #2a2a2a;
+            color: #f1f1f1;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #9bb1ff;
+            color: #1a1a1a;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #7080ff;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Consultancy Services</h1>
+    <!-- Sidebar Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>Our Consultancy Services</h2>
-        <div id="consultancy-services" class="section">
-            <div class="service-box">
-                <h3>Business Strategy Consulting</h3>
-                <p>We specialize in helping businesses formulate effective strategies to drive growth, improve competitiveness, and achieve long-term goals. Our approach is tailored to your business’s specific needs, ensuring sustainable success in an ever-changing market.</p>
-            </div>
-            <div class="service-box">
-                <h3>Financial Consulting</h3>
-                <p>Our financial experts offer deep insights into optimizing your financial processes, improving cash flow, and boosting profitability. From budgeting to financial restructuring, we provide the strategies you need to achieve financial excellence.</p>
-            </div>
-            <div class="service-box">
-                <h3>IT Consulting</h3>
-                <p>Leverage the power of technology to streamline your operations. Our IT consultants offer customized solutions to help you enhance efficiency, reduce costs, and implement the right technologies to support your business goals.</p>
-            </div>
-            <div class="service-box">
-                <h3>HR Consulting</h3>
-                <p>Our HR consulting services are designed to help you create a productive and engaged workforce. From employee engagement strategies to organizational development, we provide solutions that improve human resource practices and align them with your business objectives.</p>
-            </div>
-            <div class="service-box">
-                <h3>Market Research Consulting</h3>
-                <p>Understanding your market is key to making informed business decisions. Our thorough market research services provide actionable insights that help you better understand your customers, competitors, and industry trends, leading to more strategic decision-making.</p>
-            </div>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Website Maintenance Services</h1>
 
-    <section>
-        <h2>Our Consultancy Projects</h2>
-        <div class="projects-container">
-            <div class="project-box">
-                <h3>Project C1: Startup Strategy Development</h3>
-                <p>We worked with a promising startup to develop a comprehensive business strategy, resulting in successful funding rounds and sustained growth. Our strategic input helped the company scale rapidly while maintaining operational efficiency.</p>
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <h2>Our Website Maintenance Services</h2>
+            <div class="service-box">
+                <h3>Regular Updates</h3>
+                <p>Keep your site fresh and relevant with regular updates, including content, plugins, and design enhancements to improve user experience and SEO.</p>
             </div>
-            <div class="project-box">
-                <h3>Project C2: Financial Restructuring</h3>
-                <p>Our financial consulting team implemented a restructuring plan for a mid-sized company, leading to improved profitability and streamlined financial operations. The company saw a significant increase in revenue within the first year.</p>
+            <div class="service-box">
+                <h3>Security Monitoring</h3>
+                <p>Protect your site from threats with malware scans, firewall protection, and regular backups to safeguard your data and prevent unauthorized access.</p>
             </div>
-            <div class="project-box">
-                <h3>Project C3: IT Transformation in Healthcare</h3>
-                <p>We provided IT consulting services for a healthcare organization, enhancing their technology infrastructure, improving patient data management, and ensuring compliance with healthcare regulations. The result was improved operational efficiency and patient satisfaction.</p>
+            <div class="service-box">
+                <h3>Performance Optimization</h3>
+                <p>Enhance speed and efficiency with optimizations for loading time, mobile responsiveness, and database management, ensuring a smooth user experience.</p>
             </div>
-        </div>
-    </section>
+            <div class="service-box">
+                <h3>Technical Support & Troubleshooting</h3>
+                <p>Resolve issues like broken links, server management, and functionality problems, ensuring consistent uptime and reliable site performance.</p>
+            </div>
+            <div class="service-box">
+                <h3>Analytics & Reporting</h3>
+                <p>Receive regular insights on site performance, SEO metrics, and user feedback to inform improvements and enhance online visibility.</p>
+            </div>
+        </section>
 
-    <div class="form-container">
-        <h2>Tell Us What You Need</h2>
-        <form action="submit.php" method="post">
-            <div class="form-group">
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Our Website Maintenance Projects</h2>
+            <div class="project-box">
+                <h3>Corporate Website Overhaul</h3>
+                <p>Provided ongoing maintenance for a corporate website, improving loading speed, security, and mobile accessibility.</p>
+                <ul>
+                    <li>Regular backups and security monitoring to protect data.</li>
+                    <li>Content updates and SEO optimizations to improve rankings.</li>
+                    <li>Enhanced mobile responsiveness for user engagement.</li>
+                </ul>  
+            </div>
+            <div class="project-box">
+                <h3>E-Commerce Website Maintenance</h3>
+                <p>Maintained a high-traffic e-commerce site, ensuring seamless transactions and preventing downtime during peak hours.</p>
+                <ul>
+                    <li>24/7 performance monitoring and issue resolution.</li>
+                    <li>Security updates for safe transactions and user trust.</li>
+                    <li>Continuous SEO and content updates to drive traffic.</li>
+                </ul>  
+            </div>
+            <div class="project-box">
+                <h3>Educational Platform Support</h3>
+                <p>Supported a learning management system, enhancing usability and security for an optimal online learning experience.</p>
+                <ul>
+                    <li>Integrated backup solutions to prevent data loss.</li>
+                    <li>UI optimizations for better learner engagement.</li>
+                    <li>Performance tracking for a smooth learning experience.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <div id="contact-form" class="form-container">
+            <h2>Need Website Maintenance? Contact Us</h2>
+            <form action="submit.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="service-needed">Which service are you looking for?</label>
+
+                <label for="service-needed">Which maintenance service do you need?</label>
                 <select id="service-needed" name="service-needed" required>
                     <option value="">Select a service</option>
-                    <option value="Business Strategy Consulting">Business Strategy Consulting</option>
-                    <option value="Financial Consulting">Financial Consulting</option>
-                    <option value="IT Consulting">IT Consulting</option>
-                    <option value="HR Consulting">HR Consulting</option>
-                    <option value="Market Research Consulting">Market Research Consulting</option>
+                    <option value="Regular Updates">Regular Updates</option>
+                    <option value="Security Monitoring">Security Monitoring</option>
+                    <option value="Performance Optimization">Performance Optimization</option>
+                    <option value="Technical Support & Troubleshooting">Technical Support & Troubleshooting</option>
+                    <option value="Analytics & Reporting">Analytics & Reporting</option>
                 </select>
-            </div>
-            <div class="form-group">
+
                 <label for="details">Additional Details:</label>
                 <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information here..."></textarea>
-            </div>
-            <div class="form-group">
+
                 <input type="submit" value="Submit Request">
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 
 </body>
