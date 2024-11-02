@@ -8,11 +8,21 @@
 </head>
 <body>
 
-    <h1>Web Development</h1>
+    <!-- Sidebar Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#Web Development">Web Development</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>Our Web Development Services</h2>
-        <div id="Web Development" class="section">
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Web Development</h1>
+
+        <section id="services" class="section">
+            <h2>Our Web Development Services</h2>
             <div class="service-box">
                 <h3>Custom Web Application Development</h3>
                 <p>We create tailored web applications to meet specific business needs, ensuring high performance and scalability.</p>
@@ -33,84 +43,77 @@
                 <h3>CMS-based Websites</h3>
                 <p>We specialize in creating user-friendly websites using popular CMS platforms like WordPress and Shopify.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2>Our Web Development Projects</h2>
-        <div class="projects-container">
+        <section class="section">
+            <h2>Our Web Development Projects</h2>
             <div class="project-box">
                 <h3>SmartShop: E-commerce Platform</h3>
-                <p>SmartShop is a fully functional e-commerce platform designed to provide an intuitive shopping experience for users. Built using React.js for the frontend and Node.js with Express.js for the backend, this website supports dynamic product listings, user accounts, and secure payment gateways.</p>
-                <p><strong>Key Benefits</strong>:</p> 
+                <p>SmartShop is a fully functional e-commerce platform designed to provide an intuitive shopping experience for users.</p>
                 <ul>
-                    <li>User-Friendly Interface: A clean and responsive design developed with Bootstrap and CSS3, ensuring compatibility across all devices.</li>
-                    <li>Product Management: Admin dashboard for easy addition, deletion, and modification of products using MongoDB as the database.</li>
-                    <li>Secure Payment Integration: Implemented Stripe API and PayPal API to support multiple payment methods including credit/debit cards and digital wallets.</li>
-                    <li>Search and Filter Options: Advanced search functionality using ElasticSearch to allow users to search for products and filter by categories, price, and ratings.</li>
+                    <li>User-Friendly Interface: A clean and responsive design developed with Bootstrap and CSS3.</li>
+                    <li>Product Management: Admin dashboard using MongoDB as the database.</li>
+                    <li>Secure Payment Integration: Implemented Stripe API and PayPal API.</li>
+                    <li>Search and Filter Options: Advanced search functionality using ElasticSearch.</li>
                 </ul>           
             </div>            
             <div class="project-box">
                 <h3>BlogSphere: Blogging Platform</h3>
-                <p>BlogSphere is a modern blogging platform designed for users to create, manage, and share content effortlessly. Built using WordPress as the CMS, this platform allows bloggers to reach their audience effectively with customizable themes and plugins.</p>
-                <p><strong>Key Benefits</strong>:</p> 
+                <p>BlogSphere is a modern blogging platform designed for users to create, manage, and share content effortlessly.</p>
                 <ul>
-                    <li>Content Management: Easy-to-use editor powered by Gutenberg for writing, editing, and formatting posts, along with custom post types.</li>
-                    <li>SEO Optimization Tools: Integrated tools such as Yoast SEO to enhance search visibility and optimize content for search engines.</li>
-                    <li>User Engagement: Comment sections powered by Disqus and social media sharing options to increase interaction and reach.</li>
-                    <li>Analytics Dashboard: Integration with Google Analytics to track post performance and user engagement through an intuitive dashboard.</li>
+                    <li>Content Management: Easy-to-use editor powered by Gutenberg for writing and editing posts.</li>
+                    <li>SEO Optimization Tools: Integrated tools like Yoast SEO.</li>
+                    <li>User Engagement: Comment sections powered by Disqus.</li>
+                    <li>Analytics Dashboard: Integration with Google Analytics.</li>
                 </ul>  
             </div>
             <div class="project-box">
                 <h3>Corporate Connect: Corporate Website</h3>
-                <p>Corporate Connect is a professional website developed for Corporate to showcase their services, portfolio, and company information. The site is built using Angular for a seamless user experience and improved performance.</p>
-                <p><strong>Key Benefits</strong>:</p> 
+                <p>Corporate Connect is a professional website for showcasing services, portfolio, and company information.</p>
                 <ul>
-                    <li>Service Listings: Detailed service descriptions with accompanying images to highlight offerings, implemented using Angular Material for UI components.</li>
-                    <li>Portfolio Section: Showcases completed projects with case studies and client testimonials using a dynamic content management system (CMS).</li>
-                    <li>Contact Form: Easy-to-use form powered by Formik for inquiries, enhancing client communication with validation using Yup.</li>
-                    <li>Blog Section: Regular updates and articles to keep clients informed about industry trends, with SEO-friendly URLs.</li>
+                    <li>Service Listings: Detailed descriptions with Angular Material UI components.</li>
+                    <li>Portfolio Section: Showcases completed projects and testimonials.</li>
+                    <li>Contact Form: Inquiry form using Formik with validation.</li>
+                    <li>Blog Section: SEO-friendly articles with optimized URLs.</li>
                 </ul>
             </div>
             <div class="project-box">
                 <h3>Creative Showcase: Portfolio Website</h3>
-                <p>Creative Showcase is an interactive portfolio website developed for a graphic designer, to highlight their skills, projects, and achievements. This site is built using Next.js for server-side rendering and optimized performance.</p>
-                <p><strong>Key Benefits</strong>:</p> 
+                <p>Creative Showcase is an interactive portfolio website highlighting the client's skills, projects, and achievements.</p>
                 <ul>
-                    <li>Gallery Section: A visually engaging display of projects with filters for categories, implemented using Masonry Layout for dynamic arrangements.</li>
-                    <li>About Me Page: A personalized page detailing the client's background and expertise, designed with animations using Framer Motion.</li>
-                    <li>Contact Information: Easy access to contact details with a built-in contact form powered by Netlify Forms for potential clients and collaborators.</li>
-                    <li>Responsive Design: Optimized for viewing on desktops, tablets, and mobile devices using Tailwind CSS for utility-first styling.</li>
+                    <li>Gallery Section: A visually engaging display of projects.</li>
+                    <li>About Me Page: Details about the client's background with animations.</li>
+                    <li>Contact Information: Built-in contact form for potential clients.</li>
+                    <li>Responsive Design: Optimized for all devices using Tailwind CSS.</li>
                 </ul>
             </div>
+        </section>
 
+        <div id="contact-form" class="form-container">
+            <h2>Tell Us What You Need</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service-needed">Which service are you looking for?</label>
+                <select id="service-needed" name="service-needed" required>
+                    <option value="">Select a service</option>
+                    <option value="Custom Web Application Development">Custom Web Application Development</option>
+                    <option value="Full Stack Development">Full Stack Development</option>
+                    <option value="eCommerce Development">eCommerce Development</option>
+                    <option value="API Integration & Development">API Integration & Development</option>
+                    <option value="CMS-based Websites">CMS-based Websites</option>
+                </select>
+
+                <label for="details">Additional Details:</label>
+                <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information here..."></textarea>
+
+                <input type="submit" value="Submit Request">
+            </form>
         </div>
-    </section>
-
-    <div class="form-container">
-        <h2>Tell Us What You Need</h2>
-        <form action="submit.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="service-needed">Which service are you looking for?</label>
-            <select id="service-needed" name="service-needed" required>
-                <option value="">Select a service</option>
-                <option value="Custom Web Application Development">Custom Web Application Development</option>
-                <option value="Full Stack Development">Full Stack Development</option>
-                <option value="eCommerce Development">eCommerce Development</option>
-                <option value="API Integration & Development">API Integration & Development</option>
-                <option value="CMS-based Websites">CMS-based Websites</option>
-            </select>
-
-            <label for="details">Additional Details:</label>
-            <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information here..."></textarea>
-
-            <input type="submit" value="Submit Request">
-        </form>
     </div>
 
 </body>
