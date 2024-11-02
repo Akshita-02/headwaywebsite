@@ -33,6 +33,75 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PJK2CP8X');</script>
+
+ <style>
+        /* Basic styles for the navbar */
+        .navbar {
+            background-color: #4f4c68;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .navbar a {
+            float: right; /* Right-aligned menu */
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border: 1px solid #007bff; /* Blue border for menu items */
+            margin-left: 5px;
+            border-radius: 4px;
+        }
+        .dropdown {
+            float: right; /* Align dropdown to the right */
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            margin: 0;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid #007bff; /* Blue border */
+            border-radius: 4px;
+        }
+        .dropdown .dropbtn::after {
+            content: " ▼"; /* Arrow to indicate dropdown */
+            font-size: 12px;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+            color: white;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+       
+    </style>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJK2CP8X"
@@ -40,12 +109,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="header">
         <a href="#" class="logo"><img src="./images/image.jpg" alt=""></a>
         <div class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li>
-                  <div class="dropdown">
+      <div class="navbar">
+        <a href="index.html">About Us</a>
+        <a href="index.html">Contact Us</a>
+        <a href="index.html">Portfolio</a>
+        <div class="dropdown">
             <button class="dropbtn">Services</button>
             <div class="dropdown-content">
                 <a href="blockchain.html">Blockchain Development</a>
@@ -55,11 +123,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="Webdevelopment.html">Web Development</a>
             </div>
         </div>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="careers.html">career</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
+        <a href="index.html">Home</a>
+    </div>
     </header>
 
   <section id="home" class="home">
