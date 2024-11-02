@@ -4,7 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Applications</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #3a3a3a, #1a1a1a);
+            color: #f1f1f1;
+        }
+
+        /* Section and Card Styles */
+        h1, h2 {
+            text-align: center;
+            color: #9bb1ff;
+        }
+
+        .section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+            background: rgba(40, 40, 40, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-box, .project-box {
+            border: 1px solid #9bb1ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            background-color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .service-box:hover, .project-box:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Form Styles */
+        .form-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #9bb1ff;
+            border-radius: 6px;
+            background-color: #2a2a2a;
+            color: #f1f1f1;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #9bb1ff;
+            color: #1a1a1a;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #7a8ed3;
+        }
+    </style>
 </head>
 <body>
 
@@ -15,22 +91,108 @@
         <div id="Mobile Applications" class="section">
             <div class="service-box">
                 <h3>React Native App Development</h3>
-                <p>We specialize in developing high-performance, cross-platform mobile applications using React Native, ensuring a seamless and consistent user experience across both iOS and Android platforms. Our React Native applications leverage native device functionalities while offering the flexibility and efficiency of a single codebase, reducing time-to-market and development costs </p>
-                <p><strong>Key Benefits</strong>:</p> 
-                <li>Cross-Platform Compatibility: Write once, deploy across iOS and Android without compromising performance or user experience. Native Performance: React Native delivers near-native performance with fast rendering using native modules and APIs, resulting in smooth animations and robust app behavior.</li>
-                <li>Rich UI/UX: Custom-built components and responsive layouts ensure that apps provide a visually appealing and intuitive experience, adhering to both Android and iOS design standards. Fast Iteration: React Native’s Hot Reloading allows us to see changes instantly during development, accelerating updates and improvements.</li>
-                <li>Third-Party Plugin Integration: Easily incorporate a wide range of third-party libraries, APIs, and native device features (like GPS, cameras, push notifications) for enhanced functionality.Scalable Architecture: We build apps that can grow with your business, ensuring scalable architecture for future enhancements or expanding feature sets.</li>
-                <p><strong>Our React Native development process emphasizes speed, scalability, and user-centric design while adhering to the latest trends and best coding practices to deliver high-quality mobile applications. From prototyping and design to development, testing, and launch, we guide your mobile app journey end-to-end.</strong>:</p>                     
+                <p>We specialize in developing high-performance, cross-platform mobile applications using React Native, ensuring a seamless and consistent user experience across both iOS and Android platforms. Our React Native applications leverage native device functionalities while offering the flexibility and efficiency of a single codebase, reducing time-to-market and development costs.</p>
+                <p><strong>Key Benefits</strong>:</p>
+                <ul>
+                    <li>Cross-Platform Compatibility: Write once, deploy across iOS and Android without compromising performance or user experience.</li>
+                    <li>Native Performance: React Native delivers near-native performance with fast rendering using native modules and APIs.</li>
+                    <li>Rich UI/UX: Custom-built components and responsive layouts ensure visually appealing experiences.</li>
+                    <li>Third-Party Plugin Integration: Easily incorporate third-party libraries, APIs, and native device features.</li>
+                    <li>Scalable Architecture: We build apps that can grow with your business, ensuring scalable architecture for future enhancements.</li>
+                </ul>
             </div>
             <div class="service-box">
                 <h3>Android App Development</h3>
                 <p>Our team specializes in developing high-quality Android applications tailored to meet the unique requirements of your business. Using the latest Android SDKs and development tools, we create feature-rich, scalable, and highly responsive apps that deliver exceptional user experiences.</p>
-                <p><strong>Key Benefits</strong>:</p> 
-                <li>Custom Android Apps: We build tailored applications that align with your specific business goals, whether you need a utility app, e-commerce solution, or enterprise-level system.</li>
-                <li>Material Design Guidelines: Our apps follow Google’s Material Design principles, ensuring a modern, intuitive, and visually appealing user interface that is consistent across all devices. Optimized for Android Devices: From smartphones to tablets, our applications are optimized to work across the wide variety of Android devices and versions, ensuring compatibility and a consistent user experience.</li>
-                <li>Integration with Third-Party Services: We offer seamless integration with various third-party services, such as payment gateways, social media APIs, cloud storage, and more, to extend your app’s functionality. Push Notifications & Real-Time Updates: Our apps use Firebase and custom APIs to deliver real-time updates, push notifications, and other features that keep users engaged and informed.</li>
-                <p><strong>Android app development services aim to provide you with a highly functional, reliable, and engaging mobile application that meets your needs and delights your users.</strong>:</p>                     
-            
+                <p><strong>Key Benefits</strong>:</p>
+                <ul>
+                    <li>Custom Android Apps: We build tailored applications aligned with specific business goals.</li>
+                    <li>Material Design Guidelines: Modern, intuitive, and visually appealing UI following Google’s guidelines.</li>
+                    <li>Optimized for Android Devices: Applications work seamlessly across various Android devices and versions.</li>
+                    <li>Integration with Third-Party Services: We offer integration with payment gateways, social media APIs, cloud storage, and more.</li>
+                    <li>Push Notifications & Real-Time Updates: Engage users with Firebase and custom APIs for real-time updates.</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <h3>iOS App Development</h3>
+                <p>We specialize in creating innovative iOS applications that deliver exceptional performance, seamless functionality, and a superior user experience. Our development team uses the latest tools and technologies to build visually stunning and highly responsive apps tailored to meet business needs.</p>
+                <p><strong>Key Benefits</strong>:</p>
+                <ul>
+                    <li>Consultation & Requirement Analysis: Aligned with your business goals and target audience.</li>
+                    <li>Design & Prototyping: Wireframes and prototypes that align with iOS design guidelines.</li>
+                    <li>Development & Integration: Built with Swift, Objective-C, integrating APIs and backend systems.</li>
+                    <li>Testing & Quality Assurance: Ensuring functionality and performance on multiple iOS devices.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Our Mobile Application Projects</h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>Hospital Appointment and Health Management App</h3>
+                <p>This mobile application allows users to easily book appointments, access health reports, and manage patient details. The app streamlines patient-doctor communication, ensures timely reminders, and promotes a paperless healthcare environment.</p>
+                <p><strong>Key Benefits</strong>:</p>
+                <ul>
+                    <li>Book appointments with specific doctors or departments</li>
+                    <li>Maintain detailed health records and history</li>
+                    <li>Notifications and reminders for upcoming appointments</li>
+                    <li>User-friendly interface with secure data management</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Sports Networking and Marketplace App</h3>
+                <p>This versatile sports app facilitates live score tracking, sale and purchase of sports equipment, and networking for players and sellers. Every individual has a dedicated profile, connecting players, coaches, referees, and others in a social hub.</p>
+                <p><strong>Key Benefits</strong>:</p>
+                <ul>
+                    <li>Live score tracking for various sports</li>
+                    <li>A marketplace to buy and sell sports equipment</li>
+                    <li>Personalized profiles for players, sellers, and teams</li>
+                    <li>Networking tools for connecting players with teammates, referees, scorers, etc.</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Cryptocurrency Trading Mobile App</h3>
+                <p>This app provides a platform for trading cryptocurrencies, offering real-time market data, secure wallet integration, and smooth transactions for buying, selling, and transferring digital currencies.</p>
+                <p><strong>Key Benefits</strong>:</p>
+                <ul>
+                    <li>Real-time cryptocurrency trading with multiple coins</li>
+                    <li>Secure wallet integration and user authentication</li>
+                    <li>Smooth transaction process for buying, selling, and transferring coins</li>
+                    <li>Alerts for price fluctuations and trading opportunities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div id="Mobile app" class="form-container">
+        <h2>Tell Us What You Need</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service-needed">Which service are you looking for?</label>
+            <select id="service-needed" name="service-needed" required>
+                <option value="">Select a service</option>
+                <option value="React Native App Development">React Native App Development</option>
+                <option value="Android App Development">Android App Development</option>
+                <option value="iOS App Development">iOS App Development</option>
+            </select>
+
+            <label for="details">Additional Details:</label>
+            <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
+
             </div>
             <div class="service-box">
                 <h3>iOS App Development</h3>
