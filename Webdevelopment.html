@@ -4,14 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #3a3a3a, #1a1a1a);
+            color: #f1f1f1;
+        }
+
+        /* Sidebar Navigation Styles */
+        nav {
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #252525;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #9bb1ff;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #505050;
+            color: #ffffff;
+        }
+
+        /* Main Content */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #9bb1ff;
+        }
+
+        /* Section and Card Styles */
+        .section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+            background: rgba(40, 40, 40, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-box, .project-box {
+            border: 1px solid #9bb1ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            background-color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .service-box:hover, .project-box:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Form Styles */
+        .form-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #9bb1ff;
+            border-radius: 6px;
+            background-color: #2a2a2a;
+            color: #f1f1f1;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #9bb1ff;
+            color: #1a1a1a;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #7a8ed3;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Sidebar Navigation -->
     <nav>
         <ul>
-            <li><a href="#Web Development">Web Development</a></li>
+            <li><a href="#WebDevelopment">Web Development</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact-form">Contact</a></li>
         </ul>
@@ -55,8 +177,8 @@
                     <li>Product Management: Admin dashboard using MongoDB as the database.</li>
                     <li>Secure Payment Integration: Implemented Stripe API and PayPal API.</li>
                     <li>Search and Filter Options: Advanced search functionality using ElasticSearch.</li>
-                </ul>           
-            </div>            
+                </ul>
+            </div>
             <div class="project-box">
                 <h3>BlogSphere: Blogging Platform</h3>
                 <p>BlogSphere is a modern blogging platform designed for users to create, manage, and share content effortlessly.</p>
@@ -65,7 +187,7 @@
                     <li>SEO Optimization Tools: Integrated tools like Yoast SEO.</li>
                     <li>User Engagement: Comment sections powered by Disqus.</li>
                     <li>Analytics Dashboard: Integration with Google Analytics.</li>
-                </ul>  
+                </ul>
             </div>
             <div class="project-box">
                 <h3>Corporate Connect: Corporate Website</h3>
