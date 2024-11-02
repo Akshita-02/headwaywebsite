@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Applications</title>
+    <title>Mobile Application Development Services</title>
     <style>
         /* Global Styles */
         body {
@@ -14,12 +14,58 @@
             color: #f1f1f1;
         }
 
-        /* Section and Card Styles */
+        /* Sidebar Navigation Styles */
+        nav {
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #252525;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #9bb1ff;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #505050;
+            color: #ffffff;
+        }
+
+        /* Main Content */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
         h1, h2 {
             text-align: center;
             color: #9bb1ff;
         }
 
+        /* Section and Card Styles */
         .section {
             margin: 20px auto;
             padding: 20px;
@@ -78,194 +124,106 @@
         }
 
         .form-container input[type="submit"]:hover {
-            background-color: #7a8ed3;
+            background-color: #7080ff;
         }
     </style>
 </head>
 <body>
 
-    <h1>Mobile Applications</h1>
+    <!-- Sidebar Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>Our Mobile Application Services</h2>
-        <div id="Mobile Applications" class="section">
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Mobile Application Development Services</h1>
+
+        <section id="services" class="section">
+            <h2>Our Mobile Application Development Services</h2>
             <div class="service-box">
-                <h3>React Native App Development</h3>
-                <p>We specialize in developing high-performance, cross-platform mobile applications using React Native, ensuring a seamless and consistent user experience across both iOS and Android platforms. Our React Native applications leverage native device functionalities while offering the flexibility and efficiency of a single codebase, reducing time-to-market and development costs.</p>
-                <p><strong>Key Benefits</strong>:</p>
-                <ul>
-                    <li>Cross-Platform Compatibility: Write once, deploy across iOS and Android without compromising performance or user experience.</li>
-                    <li>Native Performance: React Native delivers near-native performance with fast rendering using native modules and APIs.</li>
-                    <li>Rich UI/UX: Custom-built components and responsive layouts ensure visually appealing experiences.</li>
-                    <li>Third-Party Plugin Integration: Easily incorporate third-party libraries, APIs, and native device features.</li>
-                    <li>Scalable Architecture: We build apps that can grow with your business, ensuring scalable architecture for future enhancements.</li>
-                </ul>
+                <h3>iOS App Development</h3>
+                <p>We specialize in creating high-quality iOS applications tailored for Apple devices, ensuring a smooth user experience and adherence to App Store guidelines.</p>
             </div>
             <div class="service-box">
                 <h3>Android App Development</h3>
-                <p>Our team specializes in developing high-quality Android applications tailored to meet the unique requirements of your business. Using the latest Android SDKs and development tools, we create feature-rich, scalable, and highly responsive apps that deliver exceptional user experiences.</p>
-                <p><strong>Key Benefits</strong>:</p>
-                <ul>
-                    <li>Custom Android Apps: We build tailored applications aligned with specific business goals.</li>
-                    <li>Material Design Guidelines: Modern, intuitive, and visually appealing UI following Google’s guidelines.</li>
-                    <li>Optimized for Android Devices: Applications work seamlessly across various Android devices and versions.</li>
-                    <li>Integration with Third-Party Services: We offer integration with payment gateways, social media APIs, cloud storage, and more.</li>
-                    <li>Push Notifications & Real-Time Updates: Engage users with Firebase and custom APIs for real-time updates.</li>
-                </ul>
+                <p>Our team builds Android applications optimized for a wide range of devices, focusing on usability, performance, and engaging user experiences.</p>
             </div>
             <div class="service-box">
-                <h3>iOS App Development</h3>
-                <p>We specialize in creating innovative iOS applications that deliver exceptional performance, seamless functionality, and a superior user experience. Our development team uses the latest tools and technologies to build visually stunning and highly responsive apps tailored to meet business needs.</p>
-                <p><strong>Key Benefits</strong>:</p>
-                <ul>
-                    <li>Consultation & Requirement Analysis: Aligned with your business goals and target audience.</li>
-                    <li>Design & Prototyping: Wireframes and prototypes that align with iOS design guidelines.</li>
-                    <li>Development & Integration: Built with Swift, Objective-C, integrating APIs and backend systems.</li>
-                    <li>Testing & Quality Assurance: Ensuring functionality and performance on multiple iOS devices.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Our Mobile Application Projects</h2>
-        <div class="projects-container">
-            <div class="project-box">
-                <h3>Hospital Appointment and Health Management App</h3>
-                <p>This mobile application allows users to easily book appointments, access health reports, and manage patient details. The app streamlines patient-doctor communication, ensures timely reminders, and promotes a paperless healthcare environment.</p>
-                <p><strong>Key Benefits</strong>:</p>
-                <ul>
-                    <li>Book appointments with specific doctors or departments</li>
-                    <li>Maintain detailed health records and history</li>
-                    <li>Notifications and reminders for upcoming appointments</li>
-                    <li>User-friendly interface with secure data management</li>
-                </ul>
-            </div>
-            <div class="project-box">
-                <h3>Sports Networking and Marketplace App</h3>
-                <p>This versatile sports app facilitates live score tracking, sale and purchase of sports equipment, and networking for players and sellers. Every individual has a dedicated profile, connecting players, coaches, referees, and others in a social hub.</p>
-                <p><strong>Key Benefits</strong>:</p>
-                <ul>
-                    <li>Live score tracking for various sports</li>
-                    <li>A marketplace to buy and sell sports equipment</li>
-                    <li>Personalized profiles for players, sellers, and teams</li>
-                    <li>Networking tools for connecting players with teammates, referees, scorers, etc.</li>
-                </ul>
-            </div>
-            <div class="project-box">
-                <h3>Cryptocurrency Trading Mobile App</h3>
-                <p>This app provides a platform for trading cryptocurrencies, offering real-time market data, secure wallet integration, and smooth transactions for buying, selling, and transferring digital currencies.</p>
-                <p><strong>Key Benefits</strong>:</p>
-                <ul>
-                    <li>Real-time cryptocurrency trading with multiple coins</li>
-                    <li>Secure wallet integration and user authentication</li>
-                    <li>Smooth transaction process for buying, selling, and transferring coins</li>
-                    <li>Alerts for price fluctuations and trading opportunities</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <div id="Mobile app" class="form-container">
-        <h2>Tell Us What You Need</h2>
-        <form action="submit.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="service-needed">Which service are you looking for?</label>
-            <select id="service-needed" name="service-needed" required>
-                <option value="">Select a service</option>
-                <option value="React Native App Development">React Native App Development</option>
-                <option value="Android App Development">Android App Development</option>
-                <option value="iOS App Development">iOS App Development</option>
-            </select>
-
-            <label for="details">Additional Details:</label>
-            <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information"></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-
-</body>
-</html>
-
+                <h3>Cross-Platform App Development</h3>
+                <p>Developing apps that work seamlessly across both iOS and Android platforms, we use technologies like Flutter and React Native to deliver high-performance, cost-effective solutions.</p>
             </div>
             <div class="service-box">
-                <h3>iOS App Development</h3>
-                <p>We specialize in creating innovative iOS applications that deliver exceptional performance, seamless functionality, and a superior user experience. Our development team uses the latest tools and technologies to build apps that are not only visually stunning but also highly responsive and efficient, tailored specifically to meet your business needs.</p>
-                <p><strong>Key Benefits</strong> </p>
-                <li>Consultation & Requirement Analysis: We begin by understanding your vision, target audience, and the specific functionality you require, ensuring we’re aligned with your business goals. Design & Prototyping: Our UI/UX designers create wireframes and prototypes that align with iOS design guidelines, offering a clear picture of the app’s structure and design.</li>
-                <li>Development & Integration: Using Swift, Objective-C, and Xcode, our development team builds the app, integrating APIs, backend systems, and third-party services to create a robust and functional app.</li>
-                <li>Testing & Quality Assurance: We run extensive tests on multiple iOS devices using XCTest and Appium to ensure smooth functionality, usability, and performance, while identifying and resolving any bugs.</li>
-                <p><strong>KOur iOS app development services guarantee a polished, high-performing app that not only stands out in the App Store but also offers a memorable and enjoyable user experience.</strong> </p>
+                <h3>UI/UX Design for Mobile</h3>
+                <p>Our designers create intuitive, user-centered mobile interfaces that ensure a consistent and enjoyable experience across devices.</p>
             </div>
-        </div>
-    </section>
+            <div class="service-box">
+                <h3>App Testing & Maintenance</h3>
+                <p>We provide comprehensive testing and ongoing maintenance services to ensure your app remains functional, secure, and up-to-date.</p>
+            </div>
+        </section>
 
-    <section>
-        <h2>Our Mobile Application Projects</h2>
-        <div class="projects-container">
+        <section id="projects" class="section">
+            <h2>Our Mobile Application Development Projects</h2>
             <div class="project-box">
-                <h3>Hospital Appointment and Health Management App</h3>
-                <p>This mobile application allows users to easily book appointments with various hospital departments, access health reports, and manage all necessary patient details in one place. Patients can consult their doctors, view diagnostic reports, track their medical history, and receive updates on appointments. The app streamlines patient-doctor communication, ensures timely reminders, and promotes a paperless healthcare environment.</p>
-                <p><strong>Key Benefits</strong>:</p> 
+                <h3>E-commerce Shopping App</h3>
+                <p>Developed a feature-rich e-commerce mobile application with secure payment integration, personalized recommendations, and a seamless checkout experience.</p>
                 <ul>
-                    <li>Book appointments with specific doctors or departments</li>
-                    <li>Maintain detailed health records and history</li>
-                    <li>Notifications and reminders for upcoming appointments</li>
-                    <li>User-friendly interface with secure data management</li>
+                    <li>Product Search and Filters</li>
+                    <li>In-App Payment Options</li>
+                    <li>Push Notifications for Promotions</li>
+                </ul>  
+            </div>
+            <div class="project-box">
+                <h3>Health and Fitness Tracker</h3>
+                <p>Created a health tracking app that monitors user activity, diet, and wellness routines, integrating with wearable devices for real-time updates.</p>
+                <ul>
+                    <li>Step and Calorie Counter</li>
+                    <li>Goal Setting and Progress Tracking</li>
+                    <li>Integration with Smartwatches</li>
+                </ul>  
+            </div>
+            <div class="project-box">
+                <h3>Social Media App</h3>
+                <p>Designed a social networking app focused on real-time interactions, media sharing, and a custom user feed algorithm.</p>
+                <ul>
+                    <li>Live Chat and Messaging</li>
+                    <li>Media Sharing and Stories</li>
+                    <li>Customizable User Profiles</li>
                 </ul>
             </div>
-            <div class="project-box">
-                <h3>Sports Networking and Marketplace App</h3>
-                <p>This versatile sports app is designed for tracking live scores, facilitating the sale and purchase of sports equipment, and offering networking opportunities for players, sellers, and purchasers. Every individual has a dedicated profile—whether a player, coach, referee, or seller. The app also allows users to connect with teammates, opponents, umpires, referees, and grounds, creating a social hub for sports enthusiasts.</p>
-                <p><strong>Key Benefits</strong>:</p> 
-                <ul>
-                    <li>Live score tracking for various sports/li>
-                    <li>A marketplace to buy and sell sports equipment</li>
-                    <li>Personalized profiles for players, sellers, and teams</li>
-                    <li>Networking tools to connect players with teammates, referees, scorers, etc.</li>
-                    
-            </div>
-            <div class="project-box">
-                <h3>Cryptocurrency Trading Mobile App</h3>
-                <p>This mobile application provides users with a comprehensive platform for trading various cryptocurrencies. It offers real-time market data, secure wallet integration, and smooth transactions for buying, selling, and transferring digital currencies. The app is designed for both beginners and experienced traders, providing tools for technical analysis, portfolio tracking, and managing multiple currencies.</p>
-                <p><strong>Key Benefits</strong>:</p> 
-                <ul>
-                    <li>Real-time cryptocurrency trading with multiple coins</li>
-                    <li>Secure wallet integration and user authentication</li>
-                    <li>Smooth transaction process for buying, selling, and transferring coins</li>
-                    <li>Alerts for price fluctuations and trading opportunities</li>
-            </div>
+        </section>
+
+        <div id="contact-form" class="form-container">
+            <h2>Tell Us What You Need</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service-needed">Which service are you looking for?</label>
+                <select id="service-needed" name="service-needed" required>
+                    <option value="">Select a service</option>
+                    <option value="iOS App Development">iOS App Development</option>
+                    <option value="Android App Development">Android App Development</option>
+                    <option value="Cross-Platform App Development">Cross-Platform App Development</option>
+                    <option value="UI/UX Design for Mobile">UI/UX Design for Mobile</option>
+                    <option value="App Testing & Maintenance">App Testing & Maintenance</option>
+                </select>
+
+                <label for="details">Additional Details:</label>
+                <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information here..."></textarea>
+
+                <input type="submit" value="Submit Request">
+            </form>
         </div>
-    </section>
-
-    <div id="Mobile app" class="Section">
-        <h2>Tell Us What You Need</h2>
-        <form action="submit.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="service-needed">Which service are you looking for?</label>
-            <select id="service-needed" name="service-needed" required>
-                <option value="">Select a service</option>
-                <option value="React Native App Development">React Native App Development</option>
-                <option value="Android App Development">Android App Development</option>
-                <option value="iOS App Development">iOS App Development</option>
-            </select>
-
-            <label for="details">Additional Details:</label>
-            <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information here..."></textarea>
-
-            <input type="submit" value="Submit Request">
-        </form>
     </div>
 
 </body>
