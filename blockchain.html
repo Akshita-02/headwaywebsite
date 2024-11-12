@@ -3,228 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blockchain Development Services</title>
+    <title>Blockchain Development Services | Your Trusted Partner</title>
+    <meta name="description" content="Unlock the power of blockchain with our comprehensive development services. We specialize in smart contracts, dApps, tokenization, ICOs, private blockchains, and more. Our experienced team delivers innovative solutions tailored to your business needs. Contact us today to revolutionize your industry with blockchain technology.">
     <style>
-        /* Global Styles */
+        /* Base Styles */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #3a3a3a, #1a1a1a);
-            color: #f1f1f1;
+            line-height: 1.6;
         }
-
-        /* Sidebar Navigation Styles */
-        nav {
-            width: 200px;
-            height: 100vh;
-            position: fixed;
-            left: 0;
-            top: 0;
-            background-color: #252525;
-            padding-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        h1, h2, h3 {
+            color: #002f5e; /* Medium blue for headings */
+            margin-top: 0;
         }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            width: 100%;
+        h1 {
+            font-size: 2.5rem;
             text-align: center;
-        }
-
-        nav ul li {
-            margin: 20px 0;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #9bb1ff;
-            font-weight: bold;
-            display: block;
-            padding: 10px;
-            border-radius: 8px;
-            transition: background-color 0.3s;
-        }
-
-        nav ul li a:hover {
-            background-color: #505050;
-            color: #ffffff;
-        }
-
-        /* Main Content */
-        .content {
-            margin-left: 220px;
             padding: 20px;
+            background-color: #333;
+            color: #f9f9f9;
         }
-
-        h1, h2 {
-            text-align: center;
-            color: #9bb1ff;
+        p {
+            margin-bottom: 1em;
         }
-
-        /* Section and Card Styles */
         .section {
-            margin: 20px auto;
+            background-color: #ffffff;
             padding: 20px;
-            max-width: 1200px;
-            background: rgba(40, 40, 40, 0.9);
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            max-width: 1100px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
-
         .service-box, .project-box {
-            border: 1px solid #9bb1ff;
-            border-radius: 12px;
+            margin-bottom: 20px;
             padding: 20px;
-            margin: 15px 0;
+            border-radius: 5px;
+            background-color: #f0f4f8; /* Light background for boxes */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 0.5em;
+        }
+        
+        /* Button Style */
+        button[type="submit"] {
             background-color: #333;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s;
-        }
-
-        .service-box:hover, .project-box:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Form Styles */
-        .form-container {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            border-radius: 12px;
-            max-width: 600px;
-            margin: 20px auto;
-        }
-
-        .form-container input[type="text"],
-        .form-container input[type="email"],
-        .form-container select,
-        .form-container textarea {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #9bb1ff;
-            border-radius: 6px;
-            background-color: #2a2a2a;
-            color: #f1f1f1;
-        }
-
-        .form-container input[type="submit"] {
-            background-color: #9bb1ff;
-            color: #1a1a1a;
+            color: #f9f9f9;
             border: none;
             padding: 10px 20px;
-            font-size: 1em;
+            font-size: 1rem;
             cursor: pointer;
-            border-radius: 6px;
+            border-radius: 5px;
             transition: background-color 0.3s;
         }
-
-        .form-container input[type="submit"]:hover {
-            background-color: #7080ff;
+        button[type="submit"]:hover {
+            background-color: #002f5e;
+        }
+        
+        /* Contact Form Styles */
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #f9f9f9;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Sidebar Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-form">Contact</a></li>
-        </ul>
-    </nav>
+    <h1>Blockchain Development Services</h1>
 
-    <!-- Main Content -->
-    <div class="content">
-        <h1>Blockchain Development Services</h1>
-
-        <section id="services" class="section">
-            <h2>Our Blockchain Development Services</h2>
+    <section class="section">
+        <h2>Our Blockchain Services</h2>
+        <div id="blockchain">
             <div class="service-box">
                 <h3>Smart Contract Development</h3>
-                <p>We create secure, efficient, and self-executing smart contracts on platforms like Ethereum and Binance Smart Chain to streamline business processes and reduce operational risks.</p>
-            </div>
-            <div class="service-box">
-                <h3>dApp Development</h3>
-                <p>Our team specializes in building decentralized applications (dApps) that offer transparency, security, and user autonomy on blockchain platforms.</p>
-            </div>
-            <div class="service-box">
-                <h3>Tokenization & ICO Services</h3>
-                <p>We assist in creating and launching digital tokens and ICOs, providing end-to-end solutions for token design, development, and distribution.</p>
-            </div>
-            <div class="service-box">
-                <h3>Blockchain Consulting</h3>
-                <p>We offer blockchain consulting services to help businesses understand and implement blockchain solutions, ensuring they achieve maximum efficiency and security.</p>
-            </div>
-            <div class="service-box">
-                <h3>Private Blockchain Solutions</h3>
-                <p>Our team designs private blockchain networks tailored for organizations that require secure, permissioned, and tamper-proof digital ledger solutions.</p>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>Our Blockchain Development Projects</h2>
-            <div class="project-box">
-                <h3>DeFi Lending Platform</h3>
-                <p>Developed a decentralized finance (DeFi) lending platform where users can lend and borrow assets securely, with transparent smart contract protocols.</p>
+                <p>Smart contracts are self-executing contracts where the terms of the agreement are directly written into code. Our team specializes in <strong>developing secure and efficient smart contracts</strong> using platforms like <strong>Ethereum</strong>, <strong>Solidity</strong>, and <strong>Hyperledger Fabric</strong>.</p>
                 <ul>
-                    <li>Automated Lending and Borrowing</li>
-                    <li>Yield Farming Capabilities</li>
-                    <li>Stablecoin Integration</li>
-                </ul>  
-            </div>
-            <div class="project-box">
-                <h3>Supply Chain Tracking System</h3>
-                <p>Created a blockchain-based supply chain system to track products from origin to delivery, ensuring authenticity and reducing counterfeits.</p>
-                <ul>
-                    <li>Real-Time Tracking</li>
-                    <li>Transparency Across Supply Chain</li>
-                    <li>Immutable Product Records</li>
-                </ul>  
-            </div>
-            <div class="project-box">
-                <h3>Tokenized Real Estate Platform</h3>
-                <p>Built a tokenized real estate platform allowing users to invest in fractional ownership of properties, providing liquidity and accessibility in real estate.</p>
-                <ul>
-                    <li>Tokenized Asset Management</li>
-                    <li>Fractional Ownership</li>
-                    <li>Blockchain-Backed Transactions</li>
+                    <li>Eliminate the need for third parties.</li>
+                    <li>Enhance transaction speed and security.</li>
+                    <li>Reduce operational costs with automated execution.</li>
+                    <li>Ideal for industries like finance, real estate, and supply chain management.</li>
                 </ul>
             </div>
-        </section>
+            
+            <div class="service-box">
+                <h3>Decentralized Application (dApp) Development</h3>
+                <p>Decentralized applications (dApps) use blockchain technology to function without a central authority. Our team builds <strong>custom dApps</strong> tailored to your industry, focusing on enhancing <strong>user experience</strong>, <strong>security</strong>, and <strong>transparency</strong>.</p>
+                <ul>
+                    <li>Decentralized: No single entity has control over the application.</li>
+                    <li>Immutable: Data stored on the blockchain is secure and tamper-proof.</li>
+                </ul>
+            </div>
 
-        <div id="contact-form" class="form-container">
-            <h2>Tell Us What You Need</h2>
-            <form action="submit.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <div class="service-box">
+                <h3>Tokenization & ICO Services</h3>
+                <p>Tokenization is the process of converting real-world assets into <strong>blockchain tokens</strong>, enabling easier trading, ownership, and investment.</p>
+                <ul>
+                    <li>Fractional ownership: Tokenize assets such as real estate, art, or company shares.</li>
+                    <li>Increased liquidity: Facilitate the trading of traditionally illiquid assets.</li>
+                    <li>ICO fundraising: Raise capital quickly through cryptocurrency offerings.</li>
+                </ul>
+            </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="service-box">
+                <h3>Blockchain Consulting</h3>
+                <p>Our <strong>blockchain consulting services</strong> provide strategic guidance to help businesses explore and adopt blockchain technology.</p>
+                <ul>
+                    <li>Receive expert advice on blockchain applications specific to your industry.</li>
+                    <li>Identify potential use cases for blockchain that align with your business goals.</li>
+                </ul>
+            </div>
 
-                <label for="service-needed">Which service are you looking for?</label>
-                <select id="service-needed" name="service-needed" required>
-                    <option value="">Select a service</option>
-                    <option value="Smart Contract Development">Smart Contract Development</option>
-                    <option value="dApp Development">dApp Development</option>
-                    <option value="Tokenization & ICO Services">Tokenization & ICO Services</option>
-                    <option value="Blockchain Consulting">Blockchain Consulting</option>
-                    <option value="Private Blockchain Solutions">Private Blockchain Solutions</option>
-                </select>
-
-                <label for="details">Additional Details:</label>
-                <textarea id="details" name="details" rows="4" placeholder="Please provide any additional information here..."></textarea>
-
-                <input type="submit" value="Submit Request">
-            </form>
+            <div class="service-box">
+                <h3>Private Blockchain Solutions</h3>
+                <p>Private blockchains are restricted-access blockchain networks that offer more <strong>control</strong>, <strong>privacy</strong>, and <strong>security</strong> than public blockchains.</p>
+                <ul>
+                    <li>Enhanced privacy: Control who has access to the network.</li>
+                    <li>Custom governance: Establish rules and permissions tailored to your business needs.</li>
+                </ul>
+            </div>
         </div>
+    </section>
+
+    <section class="section">
+        <h2>Our Blockchain Projects</h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>Gaming and Rewards Platform</h3>
+                <p>Gamify is an innovative gaming and rewards platform designed to revolutionize the gaming experience for players and developers alike.</p>
+                <ul>
+                    <li>Tokenized Rewards System: Players earn tokens for achievements and participation.</li>
+                    <li>Decentralized Asset Trading: Players can buy, sell, and trade in-game assets.</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Decentralized Marketplace</h3>
+                <p>We developed a decentralized marketplace that connects buyers and sellers directly, eliminating intermediaries.</p>
+                <ul>
+                    <li>Lower Costs: Eliminate fees associated with traditional banking institutions.</li>
+                    <li>Secure and Transparent: Trustless systems that operate through secure smart contracts.</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>CryptoExchange: Multi-Currency Trading Platform</h3>
+                <p>CryptoExchange is a cutting-edge multi-currency trading platform for seamless cryptocurrency transactions.</p>
+                <ul>
+                    <li>Wide Range of Supported Currencies: Trade major cryptocurrencies.</li>
+                    <li>Advanced Trading Tools: Access real-time market data and charting tools.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="form-container">
+         <h2>Contact Us for Blockchain Development</h2>
+        <form id="contact-form" method="POST" action="/submit">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
